@@ -1,5 +1,5 @@
 # Research Project
-*Waste management and awareness at events
+* Waste management and awareness at events
 ## Institution(s)
 * i2t Research Group, University Icesi
 ## Main Goal
