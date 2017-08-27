@@ -1,0 +1,167 @@
+<RelativeLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:gravity="bottom"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/padre">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#EC9B01"
+        android:id="@+id/telon"
+        android:orientation="vertical"
+        android:alpha="0"
+        />
+
+    <TextView
+        android:id="@+id/dragon"
+        android:layout_width="250dp"
+        android:layout_height="232dp"
+        android:layout_marginLeft="-250dp"
+        android:background="@drawable/dragon"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/globo_texto_2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/globo_texto_2"
+        android:layout_marginLeft="-300dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0"
+        android:onClick="reiniciar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/juego_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp"
+        android:background="#FF6C34"
+        android:orientation="vertical"
+        android:alpha="1"
+        >
+
+        <Button
+            android:id="@+id/llave_tope"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#00000005"
+            android:alpha="1"
+            android:onClick="llave_tope"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:id="@+id/llave"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:background="@drawable/llave2_v3"
+            />
+
+        <TextView
+            android:id="@+id/gota"
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/llave"
+            android:background="@drawable/gota"
+            />
+
+        <TextView
+            android:id="@+id/agua"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/agua"
+            />
+            <!--
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="400dp"
+            android:layout_marginBottom="-400dp" -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical"
+        android:background="#EC9B01"
+        android:gravity="center"
+        android:id="@+id/presentacion">
+        <!--rosado-->
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/globo_texto_1"
+            android:id="@+id/globo_informacion"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INICIAR JUEGO"
+            android:onClick="iniciarJuego"
+            android:background="#00000000"
+            android:textColor="#1B8AA2"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textScaleX="0.7"
+            android:textSize="12pt"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/estrella"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/estrella"
+        android:alpha="0"
+
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/globo_texto_3"
+        android:id="@+id/globo_texto_3"
+        android:alpha="1"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/tryagain">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1B8AA2"
+            android:text="JUGAR OTRA VEZ"
+            android:background="#00000000"
+            android:onClick="reiniciar"
+            android:layout_weight="1"
+            android:textSize="10pt"
+            android:textScaleX="0.7"/>
+
+
+        <Button
+            android:textScaleX="0.7"
+            android:textSize="10pt"
+            android:layout_width="wrap_content"
+            android:background="#00000000"
+            android:layout_height="wrap_content"
+            android:textColor="#1B8AA2"
+            android:text="SALIR DEL JUEGO"
+            android:onClick="salir"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>
